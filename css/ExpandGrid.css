@@ -1,0 +1,65 @@
+/*
+Grid system
+Read the website for more details
+
+*/
+
+/*Use <div class="pt-"> inside the grid container to start. */
+
+/*Adjusting the width*/
+[class*='pt-'] {
+ float: left;
+ padding-right: 10px;
+
+}
+[class*='pt-']:last-of-type {
+ padding-right: 1px;
+ float: right;
+}
+/* Clearfix */
+.container:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+.container {
+	margin: 0 15px;
+	padding: .6em 0;
+}
+/*Original width (%)*/
+.pt-1  {width:  100%;}
+.pt-2  {width: 49%;}
+.pt-3  {width: 32.33%;}
+.pt-4  {width: 24%;}
+.pt-5  {width: 19%;}
+.pt-6  {width: 15.6666666667%;}
+.pt-7  {width: 13.2857142857%;}
+.pt-8  {width: 11.5%;}
+.pt-9  {width: 10.1111111111%;}
+.pt-10 {width: 9.6%;}
+.pt-11 {width: 8.09090909091%;}
+.pt-12 {width: 7.33%;}
+.pt-14 {width: 6.142857142857134%;}
+.pt-16 {width: 5.25%;}
+/*slightly smaller (notebook)*/
+@media (min-width: 800px) and (max-width: 1100px) {
+.pt-2, .pt-7 {width: 100%;}
+.pt-4, .pt-8, .pt-10, .pt-12 {width: 50%;}
+}
+/*Tablet*/
+@media (max-width: 800px) {
+.pt-4, .pt-6, .pt-8, .pt-10, .pt-12 {width: 50%;}
+.pt-1, .pt-2, .pt-3, .pt-5, .pt-7, .pt-9, .pt-11, .pt-14, .pt-15 {width: 100%;}
+}
+/*Phones*/
+@media (max-width: 480px) {
+.pt-1, .pt-2, .pt-3, .pt-4, .pt-5, .pt-6, 
+.pt-7, .pt-8, .pt-9, .pt-10, .pt-11, .pt-12, .pt-14, .pt-16 {width: 100%;}
+
+
+.vidya {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
